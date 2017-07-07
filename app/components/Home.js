@@ -1,15 +1,22 @@
-// @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Home.css';
 
 export default class Home extends Component {
   render() {
     return (
-      <div>
-        <div className={styles.container} data-tid="container">
-          <h2>Home</h2>
-          <Link to="/counter">to Counter</Link>
+      <div
+        style={{
+          height: '100vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textAlign: 'center'
+        }}
+      >
+        <div>
+          <h1 style={{ fontWeight: 600 }}>QuinaClic</h1>
+          <br />
+          <h2 style={{ fontWeight: 300 }}><Link to="/board">Nova quina</Link></h2>
         </div>
       </div>
     );
