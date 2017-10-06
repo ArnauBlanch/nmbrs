@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { push } from 'react-router-redux';
 import Cell from './Cell';
 
 const baseStyle = {
@@ -19,7 +19,8 @@ class Board extends Component {
         num={num}
         checked={board.indexOf(num) !== -1}
         check={() => checkNumber(num)}
-        uncheck={() => undo()}
+        last={board.indexOf(num) === (board.length - 1) && board.length > 0}
+        uncheck={board.indexOf(num) === (board.length - 1) ? () => undo() : () => null}
         style={{ width: '10%' }}
       />);
     }
@@ -40,13 +41,18 @@ class Board extends Component {
   }
 
   render() {
-    const { board } = this.props;
+    const { dispatch, clearBoard } = this.props;
     return (
       <div style={{ padding: 5, height: 'calc(100% - 10px)' }}>
         <div style={{ height: 40 }}>
-          <Link to="/">
+          <a
+            onTouchTap={() => {
+              dispatch(push('/'));
+              clearBoard();
+            }}
+          >
             <i className="fa fa-arrow-left fa-2x" />
-          </Link>
+          </a>
         </div>
         <div style={{ height: 'calc(100% - 40px)' }}>
           { this.renderRows() }
@@ -58,7 +64,8 @@ class Board extends Component {
 Board.propTypes = {
   board: PropTypes.isRequired,
   checkNumber: PropTypes.func.isRequired,
-  uncheckNumber: PropTypes.func.isRequired,
+  undo: PropTypes.func.isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
 export default Board;

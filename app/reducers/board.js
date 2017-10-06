@@ -1,6 +1,6 @@
 import { CHECK_NUMBER, UNCHECK_NUMBER, UNDO, CLEAR_BOARD } from '../actions/board';
 
-export default function counter(state = [10, 15], action) {
+export default function counter(state = [], action) {
   const newState = state.slice();
   switch (action.type) {
     case CHECK_NUMBER:
