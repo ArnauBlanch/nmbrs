@@ -3,16 +3,25 @@ import PropTypes from 'prop-types';
 import { Button } from 'material-ui';
 
 class Cell extends Component {
+  getColor() {
+    const { checked, last } = this.props;
+    if (!checked) {
+      return '#E3F2FD';
+    } else if (last) {
+      return 'red';
+    }
+    return '#1E88E5';
+  }
 
   render() {
-    const { num, checked, check, uncheck } = this.props;
+    const { num, checked, check, uncheck, last } = this.props;
     return (
       <td style={{ width: '100%', margin: 2 }}>
         <Button
           raised
           style={{
-            backgroundColor: checked ? '#1E88E5' : '#E3F2FD',
-            color: checked ? '#FFFFFF' : '#0D47A1',
+            backgroundColor: this.getColor(),
+            color: (checked || last) ? '#FFFFFF' : '#0D47A1',
             height: '100%',
             width: '100%',
             fontSize: '3.5vw',
@@ -22,6 +31,7 @@ class Cell extends Component {
             fontWeight: 700
           }}
           onTouchTap={checked ? uncheck : check}
+          disabled={checked && !last}
         >
           {num}
         </Button>
@@ -32,6 +42,9 @@ class Cell extends Component {
 Cell.propTypes = {
   num: PropTypes.number.isRequired,
   checked: PropTypes.bool.isRequired,
+  check: PropTypes.func.isRequired,
+  uncheck: PropTypes.func.isRequired,
+  last: PropTypes.bool.isRequired,
 };
 
 export default Cell;
