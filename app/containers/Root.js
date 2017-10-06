@@ -11,7 +11,7 @@ type RootType = {
 
 let theme = createMuiTheme();
 const typography = createTypography(theme.palette, {
-  fontFamily: 'Nunito'
+  fontFamily: 'Montserrat'
 });
 theme = {
   ...theme,

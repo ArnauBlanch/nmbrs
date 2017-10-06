@@ -6,31 +6,39 @@ class Cell extends Component {
   getColor() {
     const { checked, last } = this.props;
     if (!checked) {
-      return '#E3F2FD';
+      return 'rgba(255, 255, 255, 0.2)';
     } else if (last) {
-      return 'red';
+      return 'rgba(204, 65, 46, 0.9)';
     }
-    return '#1E88E5';
+    return 'rgba(63, 63, 63, 0.8)';
   }
 
   render() {
-    const { num, checked, check, uncheck, last } = this.props;
+    const { num, checked, check, uncheck, last, alertNumber } = this.props;
     return (
       <td style={{ width: '100%', margin: 2 }}>
         <Button
           raised
+          disableRipple
           style={{
+            boxShadow: 'none',
             backgroundColor: this.getColor(),
-            color: (checked || last) ? '#FFFFFF' : '#0D47A1',
+            color: (checked || last) ? '#FFFFFF' : '#fff',
             height: '100%',
             width: '100%',
-            fontSize: '3.5vw',
+            fontSize: '4.5vw',
             minWidth: 0,
             padding: 0,
             margin: 0,
-            fontWeight: 700
+            fontWeight: 400,
+            borderRadius: 10,
           }}
-          onTouchTap={checked ? uncheck : check}
+          onTouchTap={
+            checked ? uncheck :
+              () => {
+                check();
+                alertNumber(num);
+            }}
           disabled={checked && !last}
         >
           {num}
@@ -45,6 +53,7 @@ Cell.propTypes = {
   check: PropTypes.func.isRequired,
   uncheck: PropTypes.func.isRequired,
   last: PropTypes.bool.isRequired,
+  alertNumber: PropTypes.func.isRequired,
 };
 
 export default Cell;
