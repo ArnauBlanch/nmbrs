@@ -182,7 +182,8 @@
     "webpack": "^2.6.1",
     "webpack-bundle-analyzer": "^2.8.2",
     "webpack-dev-server": "^2.4.5",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "prop-types": "latest"
   },
   "dependencies": {
     "electron-debug": "^1.1.0",
