@@ -1,4 +1,4 @@
-# nmbrs
+<h1> <img src="resources/icon.png" width="28" /> nmbrs</h1>
 
 ***nmbrs*** is a lotto board created to show the current results of a round. It's a 9x10 table with numbers 1-90. The previous numbers cells are marked with a grey while the last one is marked with red.
 
@@ -8,11 +8,10 @@ There's also the possibility of undoing by pressing the last number.
 
 ***nmbrs*** *has been developed using React and Electron. The state management is done using Redux. The project has been created from [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).*
 
-![](resources/tauler.png)     |  ![](resources/alerta.png)
-:----------------------------:|:----------------------------:
-Lotto board                   | New number dialog
-
-![](resources/inici.png)
+<p align="center">
+	<img src="resources/tauler.png" width="425" /> <img src="resources/alerta.png" width="425" />
+	<img src="resources/inici.png" width="350" />
+</p>
 
 ---
 
