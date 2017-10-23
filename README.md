@@ -1,4 +1,4 @@
-# nmbrs
+<h1> <img src="resources/icon.png" width="28" /> nmbrs</h1>
 
 ***nmbrs*** is a lotto board created to show the current results of a round. It's a 9x10 table with numbers 1-90. The previous numbers cells are marked with a grey while the last one is marked with red.
 
