@@ -14,22 +14,7 @@ const theme = createMuiTheme({
     fontFamily: 'Montserrat',
   },
 });
-/* const typography = createTypography(theme.palette, {
-  fontFamily: 'Montserrat'
-});
-theme = {
-  ...theme,
-  typography: {
-    ...typography,
-    body1: {
-      ...typography.body1,
-    },
-    button: {
-      ...typography.button,
-    },
-  },
-};
-*/
+
 export default function Root({ store, history }: RootType) {
   return (
     <Provider store={store}>
