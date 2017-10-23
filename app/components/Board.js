@@ -13,7 +13,7 @@ const baseStyle = {
 class Board extends Component {
   constructor(props) {
     super(props);
-    this.state = { number: 22 };
+    this.state = { number: -1 };
     this.alertNumber = this.alertNumber.bind(this);
   }
   renderColumns(offset) {

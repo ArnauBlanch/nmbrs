@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import { MuiThemeProvider, createMuiTheme, createTypography } from 'material-ui/styles';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import Routes from '../routes';
 
 type RootType = {
@@ -9,8 +9,12 @@ type RootType = {
   history: {}
 };
 
-let theme = createMuiTheme();
-const typography = createTypography(theme.palette, {
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'Montserrat',
+  },
+});
+/* const typography = createTypography(theme.palette, {
   fontFamily: 'Montserrat'
 });
 theme = {
@@ -25,7 +29,7 @@ theme = {
     },
   },
 };
-
+*/
 export default function Root({ store, history }: RootType) {
   return (
     <Provider store={store}>
