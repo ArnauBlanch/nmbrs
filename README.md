@@ -8,9 +8,10 @@ There's also the possibility of undoing by pressing the last number.
 
 ***nmbrs*** *has been developed using React and Electron. The state management is done using Redux. The project has been created from [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).*
 
-![](resources/tauler.png) ![](resources/alerta.png)
-
-![](resources/inici.png)
+<p align="center">
+	<img src="resources/tauler.png" width="425" /> <img src="resources/alerta.png" width="425" />
+	<img src="resources/inici.png" width="350" />
+</p>
 
 ---
 
