@@ -1,7 +1,7 @@
 {
   "name": "nmbrs",
   "productName": "nmbrs",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Lotto board for showing current results, using React + Redux + Electron",
   "scripts": {
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings ./test/runTests.js",
@@ -77,10 +77,10 @@
   },
   "author": {
     "name": "Arnau Blanch Cortès",
-    "email": "me@arnau.xyz",
+    "email": "hola@arnau.xyz",
     "url": "https://github.com/ArnauBlanch"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/ArnauBlanch/nmbrs/issues"
   },
