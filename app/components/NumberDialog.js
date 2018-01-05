@@ -11,8 +11,8 @@ class NumberDialog extends React.Component {
         style={{
           paddingLeft: 40,
           paddingRight: 40,
-          width: 400,
-          fontSize: 300,
+          minWidth: '50%',
+          fontSize: '52vh',
           fontWeight: 600,
           color: '#FFFFFF',
           backgroundColor: 'rgba(204, 65, 46, 0.9)',
