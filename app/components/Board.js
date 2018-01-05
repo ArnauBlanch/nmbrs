@@ -8,6 +8,7 @@ const baseStyle = {
   display: 'flex',
   width: '100%',
   maxWidth: '100%',
+  maxHeight: 'available',
   justifyContent: 'space-between'
 };
 
@@ -33,7 +34,7 @@ class Board extends Component {
         alertNumber={this.alertNumber}
       />);
     }
-    return <tr style={{ ...baseStyle, height: '11%', width: '100%' }}>{cells}</tr>;
+    return <tr style={{ ...baseStyle, maxHeight: '11%', height: '11%', width: '100%' }}>{cells}</tr>;
   }
   renderRows() {
     const rows = [];
@@ -83,17 +84,17 @@ class Board extends Component {
           />
         </div>
         <div style={{ padding: 5, height: 'calc(100% - 10px)' }}>
-          <div style={{ height: 40 }}>
+          <div style={{ height: 15 }}>
             <a
               onTouchTap={() => {
                 dispatch(push('/'));
                 clearBoard();
               }}
             >
-              <i className="fa fa-arrow-left fa-2x" />
+              <i className="fa fa-arrow-left" />
             </a>
           </div>
-          <div style={{ height: 'calc(100% - 40px)' }}>
+          <div style={{ height: 'calc(100% - 10px)' }}>
             { this.renderRows() }
           </div>
         </div>

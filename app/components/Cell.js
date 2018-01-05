@@ -27,11 +27,11 @@ class Cell extends Component {
             height: '100%',
             width: '100%',
             maxHeight: '100%',
-            fontSize: '6vh',
+            fontSize: '6.2vh',
             minWidth: 0,
             padding: 0,
             margin: 0,
-            fontWeight: 400,
+            fontWeight: 500,
             borderRadius: 10,
           }}
           onTouchTap={
