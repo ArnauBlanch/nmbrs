@@ -1,7 +1,7 @@
 {
   "name": "nmbrs",
   "productName": "nmbrs",
-  "version": "0.12.0",
+  "version": "1.0.0-beta",
   "description": "Lotto board for showing current results, using React + Redux + Electron",
   "scripts": {
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings ./test/runTests.js",

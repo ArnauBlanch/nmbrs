@@ -64,7 +64,8 @@ app.on('ready', async () => {
     width: 800,
     height: 600,
     minHeight: 500,
-    minWidth: 600
+    minWidth: 600,
+    fullscreen: true,
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
@@ -82,7 +83,8 @@ app.on('ready', async () => {
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
+  mainWindow.setFullScreen(true);
 
-  const menuBuilder = new MenuBuilder(mainWindow);
-  menuBuilder.buildMenu();
+  // const menuBuilder = new MenuBuilder(mainWindow);
+  // menuBuilder.buildMenu();
 });

@@ -1,17 +1,17 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "electron-react-boilerplate",
-  "version": "1.0.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "nmbrs",
+  "productName": "nmbrs",
+  "version": "1.0.0-beta",
+  "description": "Lotto board for showing current results, using React + Redux + Electron",
   "main": "./main.prod.js",
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Arnau Blanch Cortès",
+    "email": "hola@arnau.xyz",
+    "url": "https://arnau.xyz"
   },
   "scripts": {
     "postinstall": "npm rebuild --runtime=electron --target=1.6.6 --disturl=https://atom.io/download/atom-shell --build-from-source"
   },
-  "license": "MIT",
+  "license": "GNU General Public License v3.0",
   "dependencies": {}
 }
