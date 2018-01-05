@@ -6,6 +6,8 @@ In order to mark a new number, the number cell should be pressed and a big red d
 
 There's also the possibility of undoing by pressing the last number.
 
+**Available for macOS, Windows and Linux.** [<b><i>Download here!</b></i>](https://github.com/ArnauBlanch/nmbrs/releases/latest)
+
 ***nmbrs*** *has been developed using React and Electron. The state management is done using Redux. The project has been created from [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).*
 
 <p align="center">
@@ -20,6 +22,8 @@ There's also the possibility of undoing by pressing the last number.
 Per tal de marcar un nou número, cal prémer la seva cel·la i aleshores apareixerà un gran requadre vermell anunciant el nou número. Aquesta alerta dura 5 segons, però es pot tancar abans clicant-la.
 
 També hi ha la possiblitat de desfer l'acció fent clic a l'últim número.
+
+**Disponible per a macOS, Windows i Linux.** [<b><i>Descarrega'l aquí!</b></i>](https://github.com/ArnauBlanch/nmbrs/releases/latest)
 
 ***nmbrs*** *ha estat desenvolupat amb React i Electron. La gestió de l'estat es duu a terme gràcies a Redux. El projecte s'ha creat a partir de l'[electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate).*
 
