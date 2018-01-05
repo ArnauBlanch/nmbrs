@@ -7,6 +7,7 @@ import NumberDialog from './NumberDialog';
 const baseStyle = {
   display: 'flex',
   width: '100%',
+  maxWidth: '100%',
   justifyContent: 'space-between'
 };
 
